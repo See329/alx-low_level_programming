@@ -1,11 +1,22 @@
 #include "main.h"
+
 /**
-*add - sums up two numbers
-*@n:first integer
-*@m:second integer
-*Return: returns 0
-*/
-int add(int n, int m)
+ * print_alphabet_x10 - make alphabet x10 times
+ * Return: void
+ */
+
+void print_alphabet_x10(void)
 {
-return (n + m);
+
+char ch;
+int i;
+i = 0;
+while (i < 10)
+{
+for (ch = 'a'; ch <= 'z'; ch++)
+{
+_putchar(ch);
+}
+_putchar('\n');
+i++;
 }
